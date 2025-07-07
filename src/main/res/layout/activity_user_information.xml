@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="40dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/loginButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/user"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:scaleType="centerCrop"/>
+        <!-- Titulo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="USER INFORMATION"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:background="@drawable/information_box"
+            android:layout_marginBottom="10dp"/>
+        <!-- Informacion -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nameOutput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAME - LAST NAME"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@drawable/information_box"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/nameAccountOutput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAME ACCOUNT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@drawable/information_box"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/passwordOutput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@drawable/information_box"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/ageOutput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AGE"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@drawable/information_box"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/noticiasButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_button"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="NOTICIAS"/>
+            <Button
+                android:id="@+id/historialButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_button"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="HISTORIAL"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="40dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/nasaButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_button"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="NASA APOD"
+                />
+            <Button
+                android:id="@+id/publicarButton"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_button"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="PUBLICAR"
+                />
+        </LinearLayout>
+
+        <!-- Post boton -->
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="LOG OUT"
+            android:background="@color/black">
+        </Button>
+
+    </LinearLayout>
+
+
+    <!-- Button -->
+    <LinearLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp">
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/orange_box"/>
+        <ImageButton
+            android:id="@+id/newsButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/news"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/orange_box"/>
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/orange_box"/>
+    </LinearLayout>
+
+</RelativeLayout>
